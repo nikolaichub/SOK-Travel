@@ -1,0 +1,23 @@
+/* RF Dewi Ultrabold */
+
+@font-face {
+    font-family: 'RF Dewi Ultrabold';
+    src: local('RF Dewi Expanded Ultrabold'), local('RF-Dewi-Expanded-Ultrabold'),
+        url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.woff2') format('woff2'),
+        url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.woff') format('woff'),
+        url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+} 
+
+/* RF Dewi Ultrabold */
+
+@font-face {
+    font-family: 'RF Dewi Light';
+    src: local('RF Dewi Expanded Light'), local('RF-Dewi-Expanded-Light'),
+        url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.woff2') format('woff2'),
+        url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.woff') format('woff'),
+        url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+} 

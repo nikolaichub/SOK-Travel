@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RF Dewi Ultrabold';
+    src: local('RF Dewi Expanded Ultrabold'), local('RF-Dewi-Expanded-Ultrabold'),
+        url('RFDewiExpanded-Ultrabold.woff2') format('woff2'),
+        url('RFDewiExpanded-Ultrabold.woff') format('woff'),
+        url('RFDewiExpanded-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
