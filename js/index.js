@@ -1,31 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('working..');
 
-    /*const startButtonColors = {
-        1: 'start__button-item--green',
-        2: 'start__button-item--orange',
-        3: 'start__button-item--red',
-        4: 'start__button-item--blue'
-    }
+    let startCard1 = document.getElementById('startCard1'),
+        startCard2 = document.getElementById('startCard2'),
+        startCard3 = document.getElementById('startCard3');
 
-    const startButtonMain = document.getElementById('startButtonMain');
-    let startButtonCounter = 0;
-
-    startButtonMain.addEventListener('mouseenter', () => {
-
-        if (startButtonCounter < 4) {
-            startButtonCounter++;
-
-            console.log(startButtonColors[startButtonCounter]);
-            startButtonMain.classList.add(startButtonColors[startButtonCounter]);
-            startButtonMain.classList.remove(startButtonColors[startButtonCounter - 1]);
-
-        } else {
-            startButtonCounter = 1;
-            startButtonMain.classList.remove(startButtonColors[2],startButtonColors[3],startButtonColors[4]);
-            startButtonMain.classList.add(startButtonColors[startButtonCounter]);
-        }
-
-    });*/
+    document.addEventListener('mousemove', e => {
+        let mouseX = e.clientX / 100;
+        let mouseY = e.clientY / 100;
+    
+        startCard1.style.transform = `translate(calc(0% + ${mouseX}px), calc(-50% + ${mouseY}px))`;
+        startCard2.style.transform = `translate(calc(0% - ${mouseX}px), calc(-50% + ${mouseY}px))`;
+        startCard3.style.transform = `translate(calc(0% - ${mouseX}px), calc(-50% - ${mouseY}px))`;
+    });
 
 });
