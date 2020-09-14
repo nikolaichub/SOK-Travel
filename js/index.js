@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('working..');
 
-    const startButtonColors = {
+    /*const startButtonColors = {
         1: 'start__button-item--green',
         2: 'start__button-item--orange',
         3: 'start__button-item--red',
@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
             startButtonMain.classList.add(startButtonColors[startButtonCounter]);
         }
 
-    });
+    });*/
 
 });

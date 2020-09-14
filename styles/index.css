@@ -88,15 +88,24 @@ body{
     width: 100%;
     height: 100%;
     font-size: var(--font-origin);
+    position: relative;
     font-family: var(--font-inter);
+    overflow-x: hidden;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 /* start */
 
 .start{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 120px);
     padding: 2rem 0;
+    position: relative;
 }
 
 .start__container{
@@ -129,6 +138,7 @@ body{
 .start__logo-item{
     width: 100%;
     height: 100%;
+    pointer-events: none;
     object-fit: contain;
 }
 
@@ -190,16 +200,38 @@ body{
 
 .start__button-item{
     padding: 1rem 2rem;
-    background-color: white;
-    border: 2px solid black;
+    background-color: var(--color-gray);
     cursor: pointer;
+    border: 0;
     color: black;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius);
+    transition: all 250ms ease;
 }
 
-.start__button-item::after{
+.start__button-item .h2--bold{
+    margin: 0;
+}
+
+.start__button-dot{
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: currentColor;
+    margin-right: 1rem;
+    border-radius: var(--radius);
+}
+
+.start__button-item:hover{
+    background-color: black;
+    color: var(--color-gray);
+}
+
+/*.start__button-item::after{
     content: '';
     position: absolute;
     top: 0;
@@ -208,13 +240,11 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    /*background-color: var(--color-orange);*/
     transition: all 250ms ease;
     z-index: -1;
     transform: translateY(100%);
 }
 
-/* green on hover */
 .start__button-item--green::after{
     background-color: var(--color-green);
     transform: translateY(100%);
@@ -224,7 +254,6 @@ body{
     transform: translateY(0%);
 }
 
-/* orange on hover */
 .start__button-item--orange::after{
     background-color: var(--color-orange);
     transform: translateX(100%);
@@ -234,7 +263,6 @@ body{
     transform: translateX(0%);
 }
 
-/* red on hover */
 .start__button-item--red::after{
     background-color: var(--color-red);
     transform: translateY(-100%);
@@ -245,7 +273,6 @@ body{
 }
 
 
-/* blue on hover */
 .start__button-item--blue::after{
     background-color: var(--color-blue);
     transform: translateX(-100%);
@@ -253,7 +280,7 @@ body{
 
 .start__button-item--blue:hover::after{
     transform: translateX(0%);
-}
+}*/
 
 .start__figure{
     position: absolute;
@@ -262,18 +289,18 @@ body{
 }
 
 .start__start-figure-1{
-    top: 95%;
-    left: 14%;
+    top: 107.5%;
+    left: 2.5%;
     width: 20rem;
     height: 20rem;
     z-index: 20;
 }
 
 .start__start-figure-2{
-    top: 95%;
-    left: 87%;
-    width: 13.1rem;
-    height: 20rem;
+    top: 107.5%;
+    left: 95%;
+    width: 20rem;
+    height: 25rem;
     z-index: 20;
 }
 
@@ -404,4 +431,95 @@ body{
 .start__blocks-wrapper--third .start__block-icon img{
     height: 3rem;
     width: 3rem;
+}
+
+/* HEADER */
+
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 2rem;
+    bottom: 2rem;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+}
+
+.header__container{
+    width: calc(100% - 4rem);
+    max-width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    background-color: rgba(255, 255, 255, 0.726);
+    backdrop-filter: blur(250px);
+    -webkit-backdrop-filter: blur(250px);
+}
+
+.header__list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+    transition: all 250ms ease;
+}
+
+.header__item--red:hover{
+    background-color: var(--color-red-alpha);
+    color: var(--color-red);
+}
+
+.header__item--green:hover{
+    background-color: var(--color-green-alpha);
+    color: var(--color-green);
+}
+
+.header__item--blue:hover{
+    background-color: var(--color-blue-alpha);
+    color: var(--color-blue);
+}
+
+.header__item--orange:hover{
+    background-color: var(--color-orange-alpha);
+    color: var(--color-orange);
+}
+
+.header__dot{
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.header__dot--red{
+    background-color: var(--color-red);
+}
+
+.header__dot--green{
+    background-color: var(--color-green);
+}
+
+.header__dot--blue{
+    background-color: var(--color-blue);
+}
+
+.header__dot--orange{
+    background-color: var(--color-orange);
+}
+
+/* HOT */
+
+.hot{
+    height: 200vh;
 }

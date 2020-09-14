@@ -2,8 +2,7 @@
 
 @font-face {
     font-family: 'RF Dewi Ultrabold';
-    src:
-        url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.woff2') format('woff2'),
+    src:url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.woff2') format('woff2'),
         url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.woff') format('woff'),
         url('/fonts/RFDewiExpanded/RFDewiExpanded-Ultrabold.ttf') format('truetype');
     font-weight: 800;
@@ -14,8 +13,7 @@
 
 @font-face {
     font-family: 'RF Dewi Light';
-    src:
-        url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.woff2') format('woff2'),
+    src:url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.woff2') format('woff2'),
         url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.woff') format('woff'),
         url('/fonts/RFDewiExpanded/RFDewiExpanded-Light.ttf') format('truetype');
     font-weight: 800;
