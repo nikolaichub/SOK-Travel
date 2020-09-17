@@ -637,8 +637,87 @@ body{
 .hoth__list-shape{
     width: 100%;
     padding-bottom: 56.25%;
-    background: #000;
     border-radius: var(--radius);
+    position: relative;
+}
+
+.hot__list-image,
+.hot__list-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.hot__list-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hot__list-content{
+    padding: 2rem;
+    color: white;
+}
+
+.hot__list-info{
+    margin-top: 4rem;
+}
+
+.hot__list-section-container{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.hot__list-section{
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.hot__list-icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.hot__list-icon svg{
+    width: 100%;
+    height: 100%;
+    color: white;
+    object-fit: contain;
+}
+
+.hot__list-footer{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hot__list-arrow{
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.hot__list-arrow svg{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transform: scale(2);
+}
+
+.hot__list-arrow svg path{
 }
 
 
