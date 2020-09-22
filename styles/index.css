@@ -109,7 +109,7 @@ body {
 
 .start {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: 100vh;
     padding: 2rem 0;
     position: relative;
 }
@@ -295,18 +295,18 @@ body {
 }
 
 .start__start-figure-1 {
-    top: 107.5%;
+    top: 92%;
     left: 2.5%;
-    width: 20rem;
-    height: 20rem;
+    width: 24rem;
+    height: 24rem;
     z-index: 20;
 }
 
 .start__start-figure-2 {
-    top: 107.5%;
+    top: 95%;
     left: 95%;
     width: 20rem;
-    height: 25rem;
+    height: 20rem;
     z-index: 20;
 }
 
@@ -339,6 +339,13 @@ body {
 
 .start__blocks-wrapper {
     pointer-events: none;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.start__blocks-wrapper * {
+    transition: all 250ms ease;
 }
 
 .start__blocks-wrapper--fist {
@@ -439,10 +446,8 @@ body {
 /* HEADER */
 
 .header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 2rem;
-    bottom: 2rem;
+    position: absolute;
+    top: calc(100vh - 12rem);
     z-index: 100;
     width: 100%;
     height: auto;
